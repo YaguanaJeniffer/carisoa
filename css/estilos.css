@@ -1,0 +1,11 @@
+.avatar {
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    border-radius: 80%;
+    background-size: 100% auto;
+}
+.collapse, .navbar-collapse{
+    font-weight: bold;
+}

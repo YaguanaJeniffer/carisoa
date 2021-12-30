@@ -1,7 +1,7 @@
 <?php
 class EnlacesPaginas {
     public static function enlacesPaginasModel ($enlacesModel){
-        if ($enlacesModel == "nosotros" || 
+        if ($enlacesModel == "listar" || 
             $enlacesModel == "servicios" ||
             $enlacesModel == "contactanos")
             {
@@ -9,10 +9,10 @@ class EnlacesPaginas {
             }
         else if ($enlacesModel == "index")
         {
-            $module = "views/modules/inicio.php";
+            $module = "views/modules/home.php";
         }
         else
-            $module = "views/modules/inicio.php";
+            $module = "views/modules/home.php";
 
         return $module;
     }
