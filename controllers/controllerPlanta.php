@@ -9,7 +9,7 @@ class MvcController{
         }else {
             $enlacesController = "inicio.php";
         }
-        $respuesta = EnlacesPaginas :: enlacesPaginasModel ($enlacesController);
+        $respuesta = EnlacesPaginas :: enlacesPaginasModelPlanta ($enlacesController);
         
         include $respuesta;
     }
