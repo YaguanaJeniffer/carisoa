@@ -2,7 +2,7 @@
 class EnlacesPaginas {
     public static function enlacesPaginasModel ($enlacesModel){
         if ($enlacesModel == "listar" || 
-            $enlacesModel == "servicios" ||
+            $enlacesModel == "añadirP" ||
             $enlacesModel == "contactanos")
             {
                 $module = "views/modules/".$enlacesModel.".php";
