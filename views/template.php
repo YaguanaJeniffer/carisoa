@@ -37,14 +37,14 @@
            Pedidos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Añadir Pedido</a></li>
+            <li><a class="dropdown-item" href="index.php?action=añadirP">Añadir Pedido</a></li>
             <li><a class="dropdown-item" href="#">Editar Pedido</a></li>
             <li><a class="dropdown-item" href="#">Eliminar Pedido</a></li>
           </ul>
         </li>
       </ul>
-        <button type="button" class="btn btn-danger" style="position: relative; right:-77%;">Logout</button>
     </div>
+    <button type="button" class="btn btn-danger" >Logout</button>
   </div>
 </nav>
 </div>
