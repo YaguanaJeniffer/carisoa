@@ -1,18 +1,20 @@
 <?php
-$servername = "localhost"; 
-$username = "id18188624_usuariocari"; 
-$password = "Luis135713571357#"; 
-$dbname = "id18188624_carisoa"; 
+class Conexion extends PDO{
+    private $host = 'localhost';
+    private $user= 'root';
+    private $password= '';
+    private $dbName='id18188624_carisoa';
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$mysqli = new mysqli($servername, $username, $password, $dbname); 
-
-if(!$mysqli)
-{ 
-    die("Error en la conexion consulte al administrador".mysqli_connect_error());
-}
-else{
-    echo"nel prro";
+    public function __construct()
+    {
+        try {
+            parent::__construct('mysql:host='.$this->host.';dbname='.$this->dbName.';charset=utf8',$this->user,$this->password
+                ,array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+        }catch(PDOException $e){
+            echo $e->getMessage();
+            exit;
+        }
+    }
 }
 
 ?>
