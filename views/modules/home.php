@@ -5,27 +5,28 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
 <form class="row g-3">
   <div class="col-md-6">
     <label for="inputCod" class="form-label">Codigo Sucursal</label>
-    <input type="text" class="form-control" id="inputCod" placeholder="<?php echo $val[0]['COD_SUC'];
+    <input type="text" class="form-control" id="inputCod" value="<?php echo $val[0]['COD_SUC'];
  ?>" disabled >
   </div>
   <div class="col-md-6">
     <label for="inputNombre" class="form-label">Nombre Sucursal</label>
-    <input type="text" class="form-control" id="inputNombre" placeholder="<?php echo $val[0]['NOM_SUC'];
+    <input type="text" class="form-control" id="inputNombre"  requiered pattern="[A-Z]{3}[0-9]{4}"
+ value="<?php echo $val[0]['NOM_SUC'];
  ?>" disabled>
   </div>
   <div class="col-12">
-    <label for="inputDireccion" class="form-label">Direccion</label>
-    <input type="text" class="form-control" id="inputDireccion" placeholder="<?php echo $val[0]['DIR_SUC'];
+    <label for="inputDireccion" class="form-label">Direccion Sucursal</label>
+    <input type="text" class="form-control" id="inputDireccion"  requiered value="<?php echo $val[0]['DIR_SUC'];
  ?>" disabled>
   </div>
   <div class="col-md-6">
-    <label for="inputTelefono" class="form-label">Telefono</label>
-    <input type="text" class="form-control" id="inputTelefono" placeholder="<?php echo $val[0]['TEL_SUC'];
+    <label for="inputTelefono" class="form-label">Telefono Sucursal</label>
+    <input type="text" class="form-control" id="inputTelefono" requiered  value="<?php echo $val[0]['TEL_SUC'];
  ?>" disabled>
   </div>
   <div class="col-md-6">
-    <label for="inputCiudad" class="form-label">Ciudad</label>
-    <input type="text" class="form-control" id="inputCiudad" placeholder="<?php echo $val[0]['CIU_SUC'];
+    <label for="inputCiudad" class="form-label">Ciudad Sucursal</label>
+    <input type="text" class="form-control" id="inputCiudad" requiered value="<?php echo $val[0]['CIU_SUC'];
  ?>" disabled>
   </div>
   
