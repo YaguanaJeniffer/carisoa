@@ -23,9 +23,7 @@ $respuesta = $conn -> query ($sql);
         }else {
          $result = null;
 }
-    $resultJSON = json_encode($result);
-
-#echo json_encode($result);
-
+$resultJSON = json_encode($result);
+echo json_encode($result);
 
 ?>

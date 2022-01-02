@@ -1,12 +1,12 @@
-
 <?php
 if (isset($_POST['envio'])){
     include "models/servicioLogin.php";
     if ( $result != null ){
         session_start();
-        #$bjt = json_decode($resultJSON);
-        #echo $obj;
-        $_SESSION['usuario'] = $result;
+        $bjt = json_decode($resultJSON);
+        echo json_decode($obj,true);
+        $_SESSION['usuario'] = $bjt;
+        $_SESSION['tipo'] = $tipo;
         #$_SESSION['conUsu'] = $result[0];
         #$_SESSION['dirUsu'] = $result[2];
         #$_SESSION['telUsu'] = $result[3];
