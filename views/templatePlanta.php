@@ -18,16 +18,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?action=home">Home</a>
+          <a class="nav-link active" aria-current="page" href="redireccion.php?action=home">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sucursal
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="index.php?action=sucursalQuito">Sucursal Quito</a></li>
-            <li><a class="dropdown-item" href="index.php?action=sucursalAmbato">Sucursal Ambato</a></li>
-            <li><a class="dropdown-item" href="index.php?action=sucursalLoja">Sucursal Loja </a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=sucursalQuito">Sucursal Quito</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=sucursalAmbato">Sucursal Ambato</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=sucursalLoja">Sucursal Loja </a></li>
 
           </ul>
         </li>
@@ -37,8 +37,8 @@
            Pedidos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="index.php?action=enviarPedido">Enviar Pedido</a></li>
-            <li><a class="dropdown-item" href="index.php?action=cancelarPedido">Cancelar Pedido</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=enviarPedido">Enviar Pedido</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=cancelarPedido">Cancelar Pedido</a></li>
           </ul>
         </li>
 
@@ -47,14 +47,14 @@
             Articulos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="index.php?action=añadirArticulo">Añadir Articulos</a></li>
-            <li><a class="dropdown-item" href="index.php?action=editarArticulo">Editar Articulos</a></li>
-            <li><a class="dropdown-item" href="index.php?action=eliminarArticulo">Eliminar Articulos</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=añadirArticulo">Añadir Articulos</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=editarArticulo">Editar Articulos</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=eliminarArticulo">Eliminar Articulos</a></li>
           </ul>
         </li>
       </ul>
-        <button type="button" class="btn btn-danger" style="position: relative; right:-77%;">Logout</button>
     </div>
+    <button type="button" class="btn btn-danger" >Logout</button>
   </div>
 </nav>
 </div>

@@ -1,3 +1,4 @@
+
 .avatar {
     height: 60px;
     width: 60px;
@@ -15,3 +16,30 @@ footer {
     width: 100%;
     height: 35px;
   }
+.divFormulario{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+
+}
+
+.formularioLogin{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    border: solid;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top: none;
+    border-bottom: none;
+    border-color: rgb(124, 248, 227);
+}
+
+.avatarLogin{
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+.divAvatarLogin{
+    text-align: center;
+}

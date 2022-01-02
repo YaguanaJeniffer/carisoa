@@ -7,7 +7,7 @@ class EnlacesPaginas {
             {
                 $module = "views/modules/".$enlacesModel.".php";
             }
-        else if ($enlacesModel == "index")
+        else if ($enlacesModel == "redireccion")
         {
             $module = "views/modules/home.php";
         }
@@ -30,7 +30,7 @@ class EnlacesPaginas {
             {
                 $module = "views/modulesPlanta/".$enlacesModel.".php";
             }
-        else if ($enlacesModel == "index")
+        else if ($enlacesModel == "redireccion")
         {
             $module = "views/modulesPlanta/home.php";
         }
