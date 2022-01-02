@@ -2,7 +2,7 @@
 $val = json_decode(json_encode($_SESSION['usuario']),true);
 ?>
 <div class="estiloHome" style="padding-left: 5%; padding-right: 5%; padding-top: 25px;">
-<form class="row g-3">
+<form class="row g-3" id="formulario">
   <div class="col-md-6">
     <label for="inputCod" class="form-label">Codigo Sucursal</label>
     <input type="text" class="form-control" id="inputCod" value="<?php echo $val[0]['COD_SUC'];
@@ -10,7 +10,7 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
   </div>
   <div class="col-md-6">
     <label for="inputNombre" class="form-label">Nombre Sucursal</label>
-    <input type="text" class="form-control" id="inputNombre"  requiered pattern="[A-Z]{3}[0-9]{4}"
+    <input type="text" class="form-control" id="inputNombre" name="inputNombre" requiered pattern="[A-Z]{3}[0-9]{4}"
  value="<?php echo $val[0]['NOM_SUC'];
  ?>" disabled>
   </div>
@@ -55,4 +55,15 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
    btnEdit.disabled= false;
    btnguardar.disabled=false;
    }
+</script>
+
+<script>
+const formulario = document.querySelector("#formulario");
+
+formulario.onsubmit = e => {
+  if ( !validar("#inputNombre") ) {
+    e.preventDefault();
+    alert( "No cumple con las validaciones indicadas" );
+  }
+}
 </script>
