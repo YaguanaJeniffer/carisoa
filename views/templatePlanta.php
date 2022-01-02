@@ -54,10 +54,16 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="btn btn-danger" >Logout</button>
+    <button type="button" class="btn btn-danger" id="btnLogout" >Logout</button>
   </div>
 </nav>
 </div>
+<script>
+  var boton = document.getElementById("btnLogout");
+  boton.onclick = function (){
+    window.location="index.php";
+  }
+</script>
 <section>
   <?php
   $mvc = new MvcController();

@@ -3,11 +3,15 @@ class EnlacesPaginas {
     public static function enlacesPaginasModel ($enlacesModel){
         if ($enlacesModel == "listar" || 
             $enlacesModel == "añadirP" ||
-            $enlacesModel == "contactanos")
+            $enlacesModel == "añadircliente" ||
+            $enlacesModel == "editarcliente" ||
+            $enlacesModel == "eliminarcliente" ||
+            $enlacesModel == "editarpedido" ||
+            $enlacesModel == "eliminarpedido")
             {
                 $module = "views/modules/".$enlacesModel.".php";
             }
-        else if ($enlacesModel == "redireccion")
+        else if ($enlacesModel == "home")
         {
             $module = "views/modules/home.php";
         }
@@ -30,7 +34,7 @@ class EnlacesPaginas {
             {
                 $module = "views/modulesPlanta/".$enlacesModel.".php";
             }
-        else if ($enlacesModel == "redireccion")
+        else if ($enlacesModel == "home")
         {
             $module = "views/modulesPlanta/home.php";
         }
