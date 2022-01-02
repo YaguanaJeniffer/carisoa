@@ -57,6 +57,9 @@
 
 </body>
 </html>
+<footer class="bg-primary" style=text-align:center>
+<p ><b>Copyright © 2022 | Carisoa </b> </p>
+
 <script>
   var boton = document.getElementById("btnLogout");
   boton.onclick = function (){
