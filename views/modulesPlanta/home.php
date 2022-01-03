@@ -35,16 +35,15 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
 
 
 <script>
-   var nombre = document.getElementById('inputNombre');
    var direccion = document.getElementById('inputDireccion');
    var telefono = document.getElementById('inputTelefono');;
    var btnEdit = document.getElementById('btneditar');
    var btnguardar = document.getElementById('guardar');
    btnEdit.onclick = function(){
-   nombre.disabled = false;
    direccion.disabled = false;
    telefono.disabled = false;
    btnEdit.disabled= false;
    btnguardar.disabled=false;
    }
+
 </script>

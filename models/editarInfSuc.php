@@ -5,16 +5,15 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 include_once 'conexion.php';
 
-$cedula = $_POST['inputCod'];
-$nombre = $_POST['EST_NOMBRE'];
-$apellido = $_POST['EST_APELLIDO'];
-$direccion = $_POST['EST_DIRECCION'];
-$telefono = $_POST['EST_TELEFONO'];
+$COD_SUC = $_POST['contraseña'];
+$NOM_SUC = $_POST['usuario'];
+$DIR_SUC = $_POST['inputDireccion'];
+$TEL_SUC = $_POST['inputTelefono'];
+$CIU_SUC = $_POST['inputCiudad'];
 
-$update = "UPDATE estudiantes SET EST_CEDULA = '$cedula', EST_NOMBRE='$nombre', EST_APELLIDO = '$apellido', EST_DIRECCION='$direccion', EST_TELEFONO = '$telefono' WHERE EST_CEDULA = '$cedula'";
+$update = "UPDATE sucursal SET NOM_SUC='$NOM_SUC', DIR_SUC = '$DIR_SUC', TEL_SUC='$TEL_SUC', CIU_SUC = '$CIU_SUC' WHERE COD_SUC = '$COD_SUC'";
 
 if ($mysqli -> query($update)===TRUE){
-
     echo json_encode ("ok se guardo correctamene");
 }else{
     echo json_encode ("error ".$update.$mysqli->error);
