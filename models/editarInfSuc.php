@@ -14,7 +14,7 @@ $CIU_SUC = $_POST['inputCiudad'];
 $update = "UPDATE sucursal SET NOM_SUC='$NOM_SUC', DIR_SUC = '$DIR_SUC', TEL_SUC='$TEL_SUC', CIU_SUC = '$CIU_SUC' WHERE COD_SUC = '$COD_SUC'";
 
 if ($mysqli -> query($update)===TRUE){
-    echo json_encode ("ok se guardo correctamene");
+    
 }else{
     echo json_encode ("error ".$update.$mysqli->error);
 }

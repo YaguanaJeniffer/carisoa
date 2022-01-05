@@ -59,8 +59,6 @@ if (isset($_POST['guardar'])){
    btnEdit.disabled= false;
    btnguardar.disabled=false;
    }
-   btnguardar.onsubmit = function(){
-     window.location.href = window.location.href;
-   }
+
 </script>
 
