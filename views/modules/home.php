@@ -1,18 +1,9 @@
 <?php
 $val = json_decode(json_encode($_SESSION['usuario']),true);
 
-if (isset($_POST['guardar'])){
-    include "models/editarInfSuc.php";
-
-    include "models/servicioLogin.php";
-    $bjt = json_decode($resultJSON);
-    $_SESSION['usuario'] = $bjt;
-    $_SESSION['tipo'] = $tipo;
-    
-}
 ?>
 <div class="estiloHome" style="padding-left: 5%; padding-right: 5%; padding-top: 25px;">
-<form class="row g-3" id="formulario" method="POST" action="redireccion.php">
+<form class="row g-3" id="formulario" method="POST" action="redireccion.php?action=datos">
   <div class="col-md-6">
     <label for="inputCodigo" class="form-label">Codigo Sucursal</label>
     <input type="text" class="form-control" id="inputCodigo" name="contraseña" value="<?php echo $val[0]['COD_SUC']; ?>" readonly >
@@ -58,7 +49,8 @@ if (isset($_POST['guardar'])){
    ciudad.disabled = false;
    btnEdit.disabled= false;
    btnguardar.disabled=false;
-   }
+   
+  }
 
 </script>
 
