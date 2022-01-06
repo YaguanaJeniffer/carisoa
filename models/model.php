@@ -31,6 +31,7 @@ class EnlacesPaginas {
             $enlacesModel == "cancelarPedido" ||
             $enlacesModel == "añadirArticulo" ||
             $enlacesModel == "editarArticulo"||
+            $enlacesModel == "datos"||
             $enlacesModel == "eliminarArticulo")
             {
                 $module = "views/modulesPlanta/".$enlacesModel.".php";
