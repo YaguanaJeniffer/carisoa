@@ -14,8 +14,11 @@
     <label for="CED_CLI" class="form-label">Buscar por nombde del Cliente: </label>
     <input style="width: 450px;" class="form-control" id="CED_CLI" name="CED_CLI" list="opcionesNombre">
         <datalist id="opcionesNombre">
-            <option value="<?php cedula ?>"><?php nombre . Apellido ?></option>
-            <option value="Firefox">Buscador Dos</option>
+        <?php for ($i=0; $i <sizeof($val) ; $i++) { 
+           
+         ?> <option value="<?php echo $val[$i]['CED_CLI']; ?>"><?php echo $val[$i]['NOM_CLI'].' '.$val[$i]['APE_CLI']; ?></option>
+           <?php } ?>
+
         </datalist>
   </div>
   
