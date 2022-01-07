@@ -1,9 +1,10 @@
 <?php
     include "models/cargarClientes.php";
     if ( $result != null ){
-        #$objt = json_decode($resultJSON);
-        #$val = json_decode(json_encode($resultJSON,true));
-        #echo($val);
+        $objt = json_decode($resultJSON);
+        $val = json_decode(json_encode($objt),true);
+        #echo $val[0]['CED_CLI'];
+
     }
 
 ?>

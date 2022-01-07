@@ -1,8 +1,8 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Headers: Origin, X-Requested-with, Content-type, Accept, Authorization');
-header('Content-Type: application/json');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 
 include_once 'conexion.php';
 
@@ -19,7 +19,7 @@ if ( $respuesta -> num_rows > 0 ){
     $result = "No hay clientes P";
 }
 
-#$resultJSON = json_encode($result);
+$resultJSON = json_encode($result);
 #echo json_encode($result);
 
 
