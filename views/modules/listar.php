@@ -4,11 +4,9 @@
         $objt = json_decode($resultJSON);
         $val = json_decode(json_encode($objt),true);
         #echo $val[0]['CED_CLI'];
-
     }
 
 ?>
-
 
 <div>
 <table class="table table-striped">
@@ -22,24 +20,21 @@
 </tr>
 </thead>
   <tbody>
+      <?php
+      for ($i=0; $i <sizeof($val) ; $i++) { 
+      ?>
     <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>descuento</td>
+        
+        <td><?php echo $val[$i]['CED_CLI']; ?></td>
+        <td><?php echo $val[$i]['NOM_CLI']; ?></td>
+        <td><?php echo $val[$i]['APE_CLI']; ?></td>
+        <td><?php echo $val[$i]['SAL_CLI']; ?></td>
+        <td><?php echo $val[$i]['DES_CLI']; ?></td>
+
     </tr>
-<tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-</tr>
-<tr>
-    <th scope="row">3</th>
-    <td colspan="2">Larry the Bird</td>
-    <td>@twitter</td>
-</tr>
+    <?php   
+    }
+    ?>
 </tbody>
 </table>
 </div>
