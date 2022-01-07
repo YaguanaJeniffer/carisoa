@@ -38,8 +38,3 @@
   </div>
 </form>
 </div>
-<script>
-function guardar(){
-    
-}
-</script>
