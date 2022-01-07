@@ -8,7 +8,7 @@
 
 ?>
 
-<div>
+<div style="padding-left: 30px; padding-right: 30px; padding-top: 15px;">
 <table class="table table-striped">
 <thead>
 <tr>
