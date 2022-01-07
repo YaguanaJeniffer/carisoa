@@ -4,7 +4,6 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
     
 if (isset($_POST['guardar'])){
   include "models/editarInfSuc.php";
-echo "holi";
   include "models/servicioLogin.php";
   $bjt = json_decode($resultJSON);
   $_SESSION['usuario'] = $bjt;
