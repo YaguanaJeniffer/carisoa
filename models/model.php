@@ -8,6 +8,7 @@ class EnlacesPaginas {
             $enlacesModel == "eliminarcliente" ||
             $enlacesModel == "editarpedido" ||
             $enlacesModel == "datos" ||
+            $enlacesModel == "pedidoPlantaEspe" ||
             $enlacesModel == "eliminarpedido")
             {
                 $module = "views/modules/".$enlacesModel.".php";
