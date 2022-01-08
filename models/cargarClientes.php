@@ -6,7 +6,9 @@ header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 
 include_once 'conexion.php';
 
-$sqlSelect = "SELECT * FROM cliente";
+$val = json_decode(json_encode($_SESSION['usuario']),true);
+$codigo = $val[0]['COD_SUC'];
+$sqlSelect = "SELECT * FROM cliente WHERE COD_SUC_PER = '$codigo'";
 $respuesta = $conn -> query ($sqlSelect);
 $result = array ();
 
