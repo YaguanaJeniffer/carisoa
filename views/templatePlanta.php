@@ -70,8 +70,9 @@
   $mvc-> enlacesPaginasController();
   ?>
 </section>
-</body>
-<footer class="bg-primary" style=text-align:center>
-<p ><b>Copyright © 2022 | Carisoa </b> </p>
+<footer class="bg-primary" style="text-align:center; position: fixed;bottom: 0px;width: 100%;height: 35px;">
+  <p ><b>Copyright © 2022 | Carisoa </b> </p>
 </footer>
+</body>
+
 </html>
