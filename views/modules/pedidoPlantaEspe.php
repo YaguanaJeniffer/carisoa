@@ -19,6 +19,7 @@
     <th scope="col">Peso</th>
     <th scope="col">Capacidad</th>
     <th scope="col">Nombre Planta</th>
+    <th scope="col"></th>
 </thead>
   <tbody>
       <?php
@@ -32,6 +33,8 @@
         <td><?php echo $val[$i]['PES_ART']; ?></td>
         <td><?php echo $val[$i]['CAP_ART']; ?></td>
         <td><?php echo $val[$i]['NOM_PLA']; ?></td>
+        <td><input type="number" min="1" value="1" max="<?php echo $val[$i]['CANTIDAD'];?>" name="canArti" id="<?php echo $val[$i]['COD_ART']; ?>" style="width: 50px; margin-right: 20px;">
+            <input type="button" class="btn btn-primary" value="Agregar" onclick="agregarCarrito(<?php echo $val[$i]['COD_ART']; ?>)"></td>
 
     </tr>
     <?php   
@@ -40,3 +43,8 @@
 </tbody>
 </table>
 </div>
+<script>
+    function agregarCarrito (codArti){
+        alert(codArti);
+    }
+</script>
