@@ -34,7 +34,7 @@
   </div>
   
   <div class="col-md-6" style="padding-top: 20px;">
-  <button type="submit" id="guardar" name="guardar" class="btn btn-primary" onsubmit="guardar()">Añadir Clientes Prro</button>
+  <button type="submit" id="guardar" name="guardar" class="btn btn-primary" onsubmit="guardar()">Añadir Cliente</button>
   </div>
 </form>
 </div>

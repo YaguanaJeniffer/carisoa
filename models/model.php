@@ -6,9 +6,10 @@ class EnlacesPaginas {
             $enlacesModel == "añadircliente" ||
             $enlacesModel == "editarcliente" ||
             $enlacesModel == "eliminarcliente" ||
-            $enlacesModel == "editarpedido" ||
+            $enlacesModel == "mostrarPedidoSuc" ||
             $enlacesModel == "datos" ||
             $enlacesModel == "pedidoPlantaEspe" ||
+            $enlacesModel == "enviarPedido" ||
             $enlacesModel == "eliminarpedido")
             {
                 $module = "views/modules/".$enlacesModel.".php";
@@ -17,6 +18,12 @@ class EnlacesPaginas {
         {
             $module = "views/modules/home.php";
         }
+        else if ($enlacesModel == "mostrarPedidoSuc&suc=1"||
+                $enlacesModel == "mostrarPedidoSuc&suc=2"||
+                $enlacesModel == "mostrarPedidoSuc&suc=3")
+        {
+            $module = "views/modules/mostrarPedidoSuc.php";
+        }
         else
             $module = "views/modules/home.php";
 
@@ -24,15 +31,14 @@ class EnlacesPaginas {
     }
 
     public static function enlacesPaginasModelPlanta ($enlacesModel){
-        if ($enlacesModel == "sucursalQuito" || 
+        if ($enlacesModel == "sucursalLatacunga" || 
             $enlacesModel == "sucursalAmbato" ||
-            $enlacesModel == "sucursalLoja" ||
-            $enlacesModel == "sucursalGuayaquil" ||
-            $enlacesModel == "enviarPedido" ||
-            $enlacesModel == "cancelarPedido" ||
+            $enlacesModel == "sucursalSalcedo" ||
+            $enlacesModel == "listarPedidos" ||
             $enlacesModel == "añadirArticulo" ||
             $enlacesModel == "editarArticulo"||
             $enlacesModel == "datos"||
+            $enlacesModel == "listarArticulos"||
             $enlacesModel == "eliminarArticulo")
             {
                 $module = "views/modulesPlanta/".$enlacesModel.".php";

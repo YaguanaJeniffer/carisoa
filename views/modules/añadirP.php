@@ -28,7 +28,7 @@
     </div>
   
   <div class="col-md-6" >
-  <button type="submit" id="btnPedido" name="btnPedido" class="btn btn-primary">Pedido Planta Prro</button>
+  <button type="submit" id="btnPedido" name="btnPedido" class="btn btn-primary">Pedido Planta</button>
   </div>
 </form>
 </div>

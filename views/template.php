@@ -14,6 +14,7 @@
     <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
 
     <title>Equipo Alfa Buena Maravilla Onda Dinamita Escuadron Lobo </title>
+
 </head>
 <body>
 <div>
@@ -43,8 +44,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="redireccion.php?action=añadirP">Añadir Pedido</a></li>
-            <li><a class="dropdown-item" href="redireccion.php?action=editarpedido">Editar Pedido</a></li>
-            <li><a class="dropdown-item" href="redireccion.php?action=eliminarpedido">Eliminar Pedido</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=mostrarPedidoSuc&suc=<?php echo json_decode(json_encode($_SESSION['usuario']),true)[0]['COD_SUC'];?>">Mostrar Pedidos</a></li>
           </ul>
         </li>
       </ul>

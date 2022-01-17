@@ -6,20 +6,21 @@ header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 
 include_once 'conexion.php';
 
-
-$sqlSelect = "SELECT a.*,p.*, l.NOM_PLA FROM articulo a, articuloplanta p, planta l WHERE a.COD_ART = p.COD_ART_PER AND p.COD_PLA_PER=l.COD_PLA";
+$sqlSelect = "SELECT * FROM sucursal ";
 $respuesta = $conn -> query ($sqlSelect);
-$result = array ();
+$plantas = array ();
 
 
 if ( $respuesta -> num_rows > 0 ){
     while ( $filaEstudiante = $respuesta-> fetch_assoc()){
-        array_push($result, $filaEstudiante);
+        array_push($plantas, $filaEstudiante);
     }
 }else {
-    $result = "No hay productos";
+    $plantas = "No hay clientes P";
 }
 
-$resultJSON = json_encode($result);
+$sucursalResult = json_encode($plantas);
+#echo json_encode($plantas);
+
 
 ?>

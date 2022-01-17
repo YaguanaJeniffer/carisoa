@@ -18,7 +18,7 @@ $sqlinsertar = "INSERT INTO cliente (CED_CLI,NOM_CLI,APE_CLI,SAL_CLI,LIM_CRE_CLI
 
 if ($mysqli -> query($sqlinsertar)===TRUE){
 
-    echo json_encode ("ok se guardo correctamene");
+    #echo json_encode ("ok se guardo correctamene");
 }else{
     echo json_encode ("error ".$sqlinsertar.$mysqli->error);
 }

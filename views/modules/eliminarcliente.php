@@ -35,7 +35,7 @@
     </div>
   
   <div class="col-md-6" >
-  <button type="submit" id="btnEdit" name="btnEdit" class="btn btn-primary">Buscar Prro</button>
+  <button type="submit" id="btnEdit" name="btnEdit" class="btn btn-primary">Buscar Cliente</button>
   </div>
 </form>
 </div>
@@ -45,27 +45,27 @@
 <form class="row g-3" id="formulario" method="POST" action="redireccion.php?action=eliminarcliente">
   <div class="col-12">
     <label for="CED_CLI_PER" class="form-label">Cedula: </label>
-    <input style="width: 450px;" type="text" class="form-control" id="CED_CLI_PER" name="CED_CLI_PER" >
+    <input style="width: 450px;" readonly type="text" class="form-control" id="CED_CLI_PER" name="CED_CLI_PER" >
   </div>
   <div class="col-12">
     <label for="NOM_CLI" class="form-label">Nombre: </label>
-    <input style="width: 450px;" type="text" class="form-control" id="NOM_CLI" name="NOM_CLI" requiered >
+    <input style="width: 450px;" readonly type="text" class="form-control" id="NOM_CLI" name="NOM_CLI" requiered >
   </div>
   <div class="col-12">
     <label for="APE_CLI" class="form-label">Apellido: </label>
-    <input style="width: 450px;" type="text" class="form-control" id="APE_CLI" name="APE_CLI"  requiered >
+    <input style="width: 450px;" readonly type="text" class="form-control" id="APE_CLI" name="APE_CLI"  requiered >
   </div>
   <div class="col-md-4">
     <label for="SAL_CLI" class="form-label">Saldo Cliente: </label>
-    <input style="width: 140px;" pattern="^[0-9]{0,12}([,][0-9]{2,2})?$" type="text" class="form-control" id="SAL_CLI" name="SAL_CLI" requiered >
+    <input style="width: 140px;" readonly pattern="^[0-9]{0,12}([,][0-9]{2,2})?$" type="text" class="form-control" id="SAL_CLI" name="SAL_CLI" requiered >
   </div>
   <div class="col-md-4">
     <label for="DES_CLI" class="form-label">Descuentos:  </label>
-    <input style="width: 140px;" type="number" class="form-control" id="DES_CLI" name="DES_CLI" requiered >
+    <input style="width: 140px;" readonly type="number" class="form-control" id="DES_CLI" name="DES_CLI" requiered >
   </div>
   <div class="col-md-4">
     <label for="LIM_CRE_CLI" class="form-label">Limite Credito: </label>
-    <input style="width: 135px;" type="number" class="form-control" id="LIM_CRE_CLI" name="LIM_CRE_CLI" requiered>
+    <input style="width: 135px;" readonly type="number" class="form-control" id="LIM_CRE_CLI" name="LIM_CRE_CLI" requiered>
   </div>  
   <div class="col-md-6">
   <button type="submit" id="forEditar" name="forEditar" class="btn btn-primary" >Eliminar Cliente</button>

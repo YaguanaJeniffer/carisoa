@@ -25,9 +25,9 @@
             Sucursal
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="redireccion.php?action=sucursalQuito">Sucursal Quito</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=sucursalLatacunga">Sucursal Latacunga</a></li>
             <li><a class="dropdown-item" href="redireccion.php?action=sucursalAmbato">Sucursal Ambato</a></li>
-            <li><a class="dropdown-item" href="redireccion.php?action=sucursalLoja">Sucursal Loja </a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=sucursalSalcedo">Sucursal Salcedo </a></li>
 
           </ul>
         </li>
@@ -37,8 +37,7 @@
            Pedidos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="redireccion.php?action=enviarPedido">Enviar Pedido</a></li>
-            <li><a class="dropdown-item" href="redireccion.php?action=cancelarPedido">Cancelar Pedido</a></li>
+            <li><a class="dropdown-item" href="redireccion.php?action=listarPedidos">Listar Pedidos</a></li>
           </ul>
         </li>
 
@@ -47,6 +46,7 @@
             Articulos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="redireccion.php?action=listarArticulos">Listar Articulos</a></li>
             <li><a class="dropdown-item" href="redireccion.php?action=añadirArticulo">Añadir Articulos</a></li>
             <li><a class="dropdown-item" href="redireccion.php?action=editarArticulo">Editar Articulos</a></li>
             <li><a class="dropdown-item" href="redireccion.php?action=eliminarArticulo">Eliminar Articulos</a></li>

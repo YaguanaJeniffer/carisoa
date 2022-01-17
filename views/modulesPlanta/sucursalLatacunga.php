@@ -1,9 +1,17 @@
 <?php
-$val = json_decode(json_encode($_SESSION['usuario']),true);
+    include "models/mostrarSucursales.php";
+
+    if ( $sucursalResult != null ){
+        $objt = json_decode($sucursalResult);
+        $val = json_decode(json_encode($objt),true);
+
+        #echo $val[0]['CED_CLI'];
+    }
 
 ?>
+
 <div class="estiloHome" style="padding-left: 5%; padding-right: 5%; padding-top: 25px;">
-<form class="row g-3" id="formulario" method="POST" action="redireccion.php?action=datos">
+<form class="row g-3" id="formulario" method="POST" action="redireccion.php?action=home">
   <div class="col-md-6">
     <label for="inputCodigo" class="form-label">Codigo Sucursal</label>
     <input type="text" class="form-control" id="inputCodigo" name="contraseña" value="<?php echo $val[0]['COD_SUC']; ?>" readonly >
@@ -27,30 +35,11 @@ $val = json_decode(json_encode($_SESSION['usuario']),true);
   </div>
   
   <div class="col-md-10">
-  <button type="button" id="btneditar" class="btn btn-primary" >Editar Sucursal</button>
+  <button type="submit" id="btneditar" class="btn btn-primary" >Home</button>
   </div>
-  <div class="col-md-2">
-  <button type="submit" id="guardar" name="guardar" class="btn btn-primary" disabled>Guardar Cambios</button>
-  </div>
+
 </form>
 </div>
 
 
-<script>
-   var nombre = document.getElementById('inputNombre');
-   var direccion = document.getElementById('inputDireccion');
-   var telefono = document.getElementById('inputTelefono');
-   var ciudad = document.getElementById('inputCiudad');
-   var btnEdit = document.getElementById('btneditar');
-   var btnguardar = document.getElementById('guardar');
-   btnEdit.onclick = function(){
-   direccion.disabled = false;
-   telefono.disabled = false;
-   ciudad.disabled = false;
-   btnEdit.disabled= false;
-   btnguardar.disabled=false;
-   
-  }
-
-</script>
 
